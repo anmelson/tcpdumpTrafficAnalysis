@@ -1,48 +1,45 @@
-<h1>JWipe - Disk Sanitization</h1>
-
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
+<h1>Analyzing Traffic with Linux tcpdump</h1>
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+This was a simple project with the purpose of learning the different arguments available for tcpdump and utilize them, as well as to write a simple script to capture packets and write them to a pcap file for analysis with Wireshark or with tcpdump itself.
 <br />
-
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>tcpdump</b> 
+- <b>Wireshark</b>
 
-<h2>Environments Used </h2>
+<h2>Arguments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>-c, -w, -#, -XX, -tttt, -G, -C, -D, -i, host, port</b>
 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Using tcpdump to capture 10 packets: <br/>
+<img src="https://imgur.com/YdkKBlX.png" height="80%" width="80%" alt="tcpdump usage"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Using tcpdump to check network interfaces and capture packets from a specific interface:  <br/>
+<img src="https://i.imgur.com/D1592yg.png" height="80%" width="80%" alt="tcpdump usage"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Using tcpdump to capture 10 packets from a specific host: <br/>
+<img src="https://i.imgur.com/Hu3aMJz.png" height="80%" width="80%" alt="tcpdump usage"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Creating a simple script to capture packets from a host and write them to a pcap file:  <br/>
+<img src="https://i.imgur.com/fEzpbD6.png" height="80%" width="80%" alt="tcpdump usage"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Analyzing the traffic in Wireshark:  <br/>
+<img src="https://i.imgur.com/GFguxUl.png" height="80%" width="80%" alt="Wireshark usage"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Creating a script to use an expression to capture GET traffic:  <br/>
+<img src="https://i.imgur.com/OHRiby4.png" height="80%" width="80%" alt="tcpdump usage"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Creating a script to listen for incoming SSH traffic:  <br/>
+<img src="https://i.imgur.com/6yw8k2g.png" height="80%" width="80%" alt="tcpdump usage"/>
 </p>
